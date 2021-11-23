@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-11-23T23:52:26+01:00",
+  "id": "BIOS02",
+  "duration": 17,
+  "title": "GUÍA BIOS 02 ThinkPad E15 (20RD 20RE)",
+  "summary": "Guia Opciones Seguridad BIOS2",
+  "source": "guia_bios2.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown"
+  ],
+  "tags": [
+    "web"
+  ],
+  "url": "BIOS02"
+}

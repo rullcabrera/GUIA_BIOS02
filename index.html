@@ -1,0 +1,316 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>GUÍA BIOS 02 ThinkPad E15 (20RD 20RE)</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="BIOS02"
+                  title="GUÍA BIOS 02 ThinkPad E15 (20RD 20RE)"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Página 1" duration="0">
+        <p>Duration 00:00:30</p>
+<h2 is-upgraded>Introducción</h2>
+<p>En este caso se trata de una <em>BIOS UEFI</em> también, pero mucho más actual.<br>Muestro en la siguiente página la lista de opciones de seguridad que tenemos disponibles.</p>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/da772a158126de64.jpg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 2" duration="0">
+        <p>Duration 00:04:00</p>
+<h2 is-upgraded>SECCIÓN PRINCIPAL OPCIONES DE SEGURIDAD</h2>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/f7798c77b9edd7c0.jpg"></p>
+<aside class="special"><p>Os muestro un listado de las secciones y las vamos explicando:</p>
+</aside>
+<h2 is-upgraded>SECCIÓN PASSWORD</h2>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/4a3b2a9a58668f19.jpg"></p>
+<ul>
+<li><strong>Supervisor Password</strong>: → Habilitar/Deshabilitar. Para asignar una clave de Supervisor, que nos pedirán al entrar en la BIOS.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/d91f5d0950f320c7.jpg"></p>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/fa6260f23eb89376.jpg"></p>
+<ul>
+<li><strong>Lock UEFI BIOS Settings</strong>: → Nos permite bloquear las opciones de la <em>BIOS</em>, para no poder modificar sin antes poner la clave de <em>Supervisor</em>.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/f916fadd9e0a6e22.jpg"></p>
+<ul>
+<li><strong>Password at Unattended Boot</strong>: → Pedir la clave a la hora de un arranque desatendido. Por ejemplo; al usar el arranque por <em>WOL (Wake On Lan)</em>. Podríamos deshabilitar como medida de seguridad externa. Ya que no se podría arrancar el equipo mediante Red.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/ae05e4931e23fe69.jpg"></p>
+<ul>
+<li><strong>Password at Restart</strong>: → Nos pedirá una clave al reiniciar el equipo.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/a814f41ee7dbe3a3.jpg"></p>
+<ul>
+<li><strong>Password at Boot Device List</strong>: → Clave para acceder a la lista de dispositivos de arranque.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/fc2659e578876b17.jpg"></p>
+<ul>
+<li><strong>Password Count Exceeded Error</strong>: → Habilitar un contador de ingreso erróneo de clave, a la hora de entrar a la <em>BIOS</em>.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/cb579a170069678f.jpg"></p>
+<ul>
+<li><strong>Set minimum length</strong>: → Activar un mínimo de longitud a la clave.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/ede2d1be45e9292f.jpg"></p>
+<ul>
+<li><strong>Power-On-Password</strong>: → Habilitar el pedir una clave al arrancar el equipo. Se debe activar <strong>&#34;Password Beep&#34;</strong>, en el submenú <strong>&#34;Alarm&#34;</strong>. Para poder habilitar esta opción. Tiene el mismo proceso que <strong>&#34;Supervisor Password&#34;</strong>.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/1f0354c319794293.jpg"></p>
+<ul>
+<li><strong>Hard disk 1 Password</strong>: → Habilitar una clave al primer disco duro. Esta opción también requiere previamente activar la característica de <strong>&#34;Password Beep&#34;</strong>.</li>
+<li>Tendremos 2 opciones:<br><br><ul>
+<li><strong>User only</strong>: Se usa la clave del usuario que hemos configurado.</li>
+<li><strong>User+Master</strong>: En este caso la del usuario y opcionalmente una clave <strong>&#34;maestra&#34;</strong>, puede usar para dar acceso al <em>Administrador</em>.</li>
+</ul>
+</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/bd611919be3a08e3.jpg"></p>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/8ac74a34bce8efb6.jpg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 3" duration="1">
+        <h2 is-upgraded>SECCIÓN SECURITY CHIP</h2>
+<aside class="special"><p>En esta sección podremos modificar opciones relativas al chip de seguridad <em>&#34;TPM&#34;</em>.</p>
+</aside>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/324863d0ed0dd564.jpg"></p>
+<ul>
+<li><strong>Security Chip type</strong>: → Vemos el tipo de chip de seguridad que tenemos instalado. En este caso <em>&#34;TPM 2.0&#34;</em>.</li>
+<li><strong>Security Chip</strong>: → Podremos activar/desactivar el chip de seguridad.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/d9aa33cf82980524.jpg"></p>
+<ul>
+<li><strong>Security Reporting Options</strong>: → Tenemos un submenú con opciones de reporte de seguridad.</li>
+<li><strong>SMBIOS Reporting</strong>: → Podremos habilitar/deshabilitar los reportes de información que produzca nuestra <em>BIOS</em>.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/8030c942833df472.jpg"></p>
+<ul>
+<li><strong>Clear Security Chip</strong>: → Nos sirve para limpiar la claves de encriptación del Chip. No podremos acceder a la información encriptada que tuviéramos en el chip.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/f74abccb23a20774.jpg"></p>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/6a0a217e415ce2bd.jpg"></p>
+<ul>
+<li><strong>Physical Presence for Clear</strong>: → Podremos habilitar/deshabilitar que nos salga una ventana para asegurar que un usuario físico debe de confirmar o no el limpiado del Chip.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/8d7233b9f47b201f.jpg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 4" duration="1">
+        <h2 is-upgraded>SECCIÓN UEFI BIOS UPDATE OPTION</h2>
+<aside class="special"><p>Esta sección nos da opciones respecto a la actualización de la <em>BIOS</em>.</p>
+</aside>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/6440d0ecb48b55ca.jpg"></p>
+<ul>
+<li><strong>Flash BIOS Updating by End-Users</strong>: → Podremos poner si queremos que a la hora de actualizar nuestra <em>BIOS</em> requiera meter <strong>&#34;Supervisor Password&#34;</strong> o no.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/a1c5484e80e4ca8a.jpg"></p>
+<ul>
+<li><strong>Secure Rollback Prevention</strong>: → Permite o no, el querer realizar <em>&#34;flasheos&#34;</em> a versiones de <em>UEFI BIOS</em> anteriores o no.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/a35822495edb7660.jpg"></p>
+<ul>
+<li><strong>Windows UEFI Firmware Update</strong>: → Nos permite activar/desactivar la opción de tener actualización de firmware <em>UEFI</em> de Windows.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/488df50bc4f583e5.jpg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 5" duration="1">
+        <h2 is-upgraded>SECCIÓN MEMORY PROTECTION</h2>
+<aside class="special"><p>En esta sección tenemos una opción respecto a protección de memoria de posibles <em>&#34;virus&#34;</em>.</p>
+</aside>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/847c6b44600b50d3.jpg"></p>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/86a2690dcadc349b.jpg"></p>
+<ul>
+<li><strong>Execution Prevention</strong>: → Podremos activar/desactivar siempre que nuestro sistema operativo lo permita. Esta opción puede prevenir de ataques <em>virus/gusanos</em> que se puedan crear a través de un <strong>&#34;Buffer Overflow&#34;</strong>. Si lo tenemos desactivado, estará el sistema en estado normal.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 6" duration="1">
+        <h2 is-upgraded>SECCIÓN VIRTUALIZACIÓN</h2>
+<aside class="special"><p>En esta sección tenemos opciones relativas a la virtualización. Para tener mejor compatibilidad luego con aplicaciones de máquinas virtuales. En este caso son tecnologías de <em>INTEL</em>.</p>
+</aside>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/1ad3c3b3f0bcb9f3.jpg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 7" duration="1">
+        <h2 is-upgraded>SECCIÓN I/O PORT ACCESS</h2>
+<aside class="special"><p>En esta sección hay opciones para decidir qué dispositivos de entrada/salida están activos.</p>
+</aside>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/ca73abaca34c099.jpg"></p>
+<ul>
+<li><strong>Ethernet LAN</strong>: → Habilitar/Deshabilitar la tarjeta de red y en el sistema.</li>
+<li><strong>Wireless LAN</strong>: → &#34;&#34;  &#34;&#34;  la tarjeta Wi-Fi.</li>
+<li><strong>Bluetooth</strong>: → &#34;&#34;   &#34;&#34;  el chip bluetooth.</li>
+<li><strong>USB Port</strong>: → &#34;&#34;    &#34;&#34; los puertos <em>USB</em>; no afecta a puerto <strong>&#34;Thunderbolt&#34;</strong> o puerto * <strong>USB &#34;Type-C&#34;</strong>.</li>
+<li><strong>Integrated Camera</strong>: → &#34;&#34;    &#34;&#34; la cámara que nos viene con el portátil.</li>
+<li><strong>Microphone</strong>: → &#34;&#34;    &#34;&#34; el micrófono que nos viene en el portátil.</li>
+<li><strong>Fingerprint Reader</strong>: → &#34;&#34;  &#34;&#34; el lector de huellas del portátil.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 8" duration="1">
+        <h2 is-upgraded>SECCIÓN INTERNAL DEVICE ACCESS</h2>
+<aside class="special"><p>En esta sección tenemos una opción relativa al acceso de dispositivos internos; como el de almacenamiento.</p>
+</aside>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/662dbb05de0f5db4.jpg"></p>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/efeee9fdc6b8cb7f.jpg"></p>
+<ul>
+<li><strong>Internal Storage Temper Detection</strong>: → Podremos activar/desactivar, activando nos detectará si hemos quitado algún dispositivo de almacenamiento interno o disco externo cuando el sistema está en modo hibernación. Si lo extraemos en ese estado el sistema se apagará y cuando vuelva arrancar desde la hibernación. Los datos no guardados se perderán.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 9" duration="1">
+        <h2 is-upgraded>SECCIÓN ABSOLUTE PERSISTENCIE® MODULE</h2>
+<aside class="special"><p>En esta sección podremos activar un módulo de persistencia. Es un servicio opcional de monitorización.</p>
+</aside>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/338b21776fefa7c6.jpg"></p>
+<ul>
+<li><strong>Current Setting</strong>: → Podremos habilitar/deshabilitar o permanentemente deshabilitado.</li>
+<li><strong>Current State</strong>: → Se refleja la opción que elegimos arriba.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 10" duration="1">
+        <h2 is-upgraded>SECCIÓN INTEL® SGX CONTROL</h2>
+<aside class="special"><p>En esta sección tenemos opciones referidas al sistema de códigos de instrucciones relacionadas con la seguridad.</p>
+</aside>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/233bf8c3e39a542e.jpg"></p>
+<ul>
+<li><strong>Intel® SGX Control</strong>: → Tenemos para habilitar/deshabilitar o que lo gestione el software <em>&#34;SGX&#34;</em> para <em>UEFI Boot OS</em>.</li>
+<li><strong>Current State</strong>: → Refleja la opción elegida.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/f0087b02dde0d905.jpg"></p>
+<ul>
+<li><strong>Change Owner EPOCH</strong>: → Nos permite borrar la información persistente que tenga la tecnología de <em>INTEL SGX</em>.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/196f39895207a49b.jpg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 11" duration="1">
+        <h2 is-upgraded>SECCIÓN DEVICE GUARD</h2>
+<aside class="special"><p>En esta sección podemos decirle a la <em>BIOS</em> que deshabilite todas las opciones del <strong>&#34;Boot Order&#34;</strong>, y los deje solo a <em>HDD/SSD internos</em>.</p>
+</aside>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/573073d37e11a66e.jpg"></p>
+<ul>
+<li><strong>Device Guard</strong>: → Podemos activar o no. Que solo se puede arrancar desde <em>HDD/SSD internos</em>. Para habilitar esta opción debe de estar activada <strong>&#34;Supervisor Password&#34;</strong>.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 12" duration="1">
+        <h2 is-upgraded>SECCIÓN THINKSHIELD SECURE WIPE</h2>
+<aside class="special"><p>En esta sección tenemos una opción para habilitar un <strong>&#34;Secure Wipe&#34;</strong>, a través de la <em>APP</em>.</p>
+</aside>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/1d4a5653cbaafc3f.jpg"></p>
+<ul>
+<li><strong>ThinkShield secure wipe in App Menu</strong>: → Podemos activar/desactivar el <em>&#34;ThinkShield Secure Wipe&#34;</em> en el menú de la APP usando <em>F12</em>.</li>
+</ul>
+<aside class="warning"><p>Como hemos comentado arriba en distintos puntos, en esta <em>BIOS</em> tenemos varias opciones para evitar posibles arranques externos. Desde una amplia lista de dispositivos que podemos impedir que se puedan elegir como arranque. Que solo se puede arrancar el sistema desde discos duros internos. O también el impedir que se arranque con la opción <strong>&#34;Wake On Lan&#34;</strong>.</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 13" duration="2">
+        <h2 is-upgraded>SECCIÓN SECURE BOOT CONFIGURATION</h2>
+<aside class="special"><p><strong>Secure Boot</strong>: → En esta sección podremos configurar aspectos del <strong>&#34;Arranque Seguro&#34;</strong> que implementó <em>Microsoft</em>, para evitar en el arranque que pudieran cargar <em>drivers, firmware UEFI, OS etc..</em> de <em>&#34;autores conocidos&#34;</em>, evitando posibles archivos maliciosos.</p>
+</aside>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/7d46f97defc7f225.jpg"></p>
+<ul>
+<li><strong>Secure Boot</strong>: → Para activarlo o desactivarlo. Si lo activamos prevenimos que se arranquen por ejemplo <em>OS no autorizados</em>. Y tendremos que ponerlo en <strong>&#34;UEFI Only&#34; and &#34;CSM Support: no&#34;</strong>.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/26a066d32bc6b028.jpg"></p>
+<ul>
+<li><strong>Platform Mode</strong>: → Específicas el modo de proceder del sistema operativo. Tenemos 2 opciones <strong>&#34;User Mode&#34; o &#34;Setup Mode&#34;</strong>.<br><br><ul>
+<li><strong>User Mode</strong>: El sistema mantiene la <strong>&#34;Platform Key&#34;</strong> para el <strong>&#34;Secure Boot&#34;</strong>.</li>
+<li><strong>Setup Mode</strong>: La <strong>&#34;Platform Key&#34;</strong> es limpiada en orden para personalizar las bases de datos del <strong>&#34;Secure Boot&#34;</strong> sin autorización.</li>
+</ul>
+</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/28a8f1a574321abc.jpg"></p>
+<ul>
+<li><strong>Reset to Setup Mode</strong>: → Esta opción sirve para resetear la actual <strong>&#34;Platform Key&#34;</strong> e instalar tu la tuya propia y personalizar las firmas de las bases de datos del arranque seguro.</li>
+<li><strong>Restore Factory Keys</strong>: → Está opción sirve para restaurar de fábrica las claves y certificados de las base de datos del arranque seguro.</li>
+<li><strong>Clear All Secure Boot Keys</strong>: → Nos permite limpiar todas las claves de las bases de datos que haya almacenadas en el arranque seguro. Y poder instalar tus propias claves y certificados.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Página 14" duration="5">
+        <h2 is-upgraded>SECCIÓN BOOT</h2>
+<aside class="special"><p>Boot, en esta sección vamos a poder configurar aspectos de cómo queremos que arranque el equipo, orden en el que queremos que lo haga o bloquear el poder modificar ese orden de arranque.</p>
+</aside>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/60f31797cb35e7c5.jpg"></p>
+<ul>
+<li><strong>Network Boot</strong>: → Elegir el orden de prioridad en el arranque en Red cuando usemos <strong>&#34;Wake On Lan&#34;</strong>.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/685dd2965ba1f3fc.jpg"></p>
+<ul>
+<li><strong>Boot Mode</strong>: → Como queremos que sea el arranque, que nos muestre la pantalla de <strong>&#34;Diagnóstico&#34;</strong> o no.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/77da60cbf76de359.jpg"></p>
+<ul>
+<li><strong>Option Key Display</strong>: → Que nos muestre o no las teclas de las opciones posibles en el arranque.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/9dcaa4a20d778e54.jpg"></p>
+<ul>
+<li><strong>Boot Device List F12 Option</strong>: → Habilitar/Deshabilitar que se nos muestre la opción de <em>F12</em> para lista los dispositivos de arranque. Solo podremos usar esta opción cuando el Supervisor entrar al <em>Setup</em>.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/500e21922c95647c.jpg"></p>
+<ul>
+<li><strong>Boot Order Lock</strong>: → Opción que nos permite bloquear para modificar el orden de arranque.</li>
+</ul>
+<p class="image-container"><img alt="Foto1_BIOS02" src="img/55267bcc2e77a688.jpg"></p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>
